@@ -1,0 +1,72 @@
+<section id='post1'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-8 text-center post_content'>
+        <% @posts.each do |post| %>
+        <h2>
+          <%= link_to post.title, post, class: "post_title" %>
+        </h2>
+
+        <hr>
+        <p class='date text-center'>
+           Submitted  <%= time_ago_in_words(post.created_at)  %> ago
+        </p>
+        <div class='content'>
+
+          <%= link_to (image_tag post.image.url(:medium, :class => "img-responsive center-block" )), post %>
+          <p class='text-center'>
+            <%= post.content %>
+          </p>
+
+          <%= link_to "View More", post, class: "btn btn-primary" %>
+
+          <br>
+
+          <div class='sharebox'>
+            <p class='pull-left'>
+              <small>SHARE</small> <i class='fa fa-long-arrow-right'></i>
+            </p>
+            <p class='pull-right'>
+               <a href="#" class='share_button'><i class='fa fa-facebook'></i></a>
+               <a href="#" class='share_button'><i class='fa fa-twitter'></i></a>
+               <a href="#" class='share_button'><i class='fa fa-instagram'></i></a>
+               <a href="#" class='share_button'><i class='fa fa-pinterest-p'></i></a>
+            </p>
+          </div>
+        </div>
+        <% end %>
+
+
+      </div>
+
+      <div class='col-md-3 col-offset-1 aside_content pull-right'>
+        <div class='aside_content'>
+          <h3 class='aside_title text-center'>About Me</h3>
+          <hr>
+          <%= image_tag('elaine.png', :class => 'img-responsive thumbnail center-block') %>
+          <p>
+            Oh hello! I'm Elaine and I love beauty and style. I am a Business Developer and Producer. I love expressing myself through
+            my love for fashion, my personal style and in writing.
+          </p>
+          <p>
+            Over the years, Ihave learnt that style is a way of saying who you are without having to speak.
+          </p>
+          <p>
+            I live life each day at a time and I have big dreams and goals I'd love to accomplish in one day.
+            Thanks for stopping by, hope you stick around more.
+          </p>
+        </div>
+        <div class='text-center'>
+          <h3 class='aside_title text-center'>
+            Follow Me
+          </h3>
+          <hr>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>

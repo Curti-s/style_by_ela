@@ -1,0 +1,199 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ body {
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+.navbar-default {
+    background-color:#eee;
+    border-color:transparent;
+    padding:0;
+}
+
+.navbar-default .navbar-nav>li> .nav {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Signika Negative', sans-serif;
+    margin-right: 2rem;
+    line-height: 5px;
+    padding-top: 2rem;
+}
+
+
+.navbar-default .navbar-nav>li> .nav:hover,
+.navbar-default .navbar-nav>li> .nav:focus,
+.navbar-default .navbar-nav>li> .nav:active
+ {
+    color: #430176;
+    text-decoration: underline;
+}
+
+.navbar-default .nav-pills .fa-facebook {
+    color: #0105f6;
+}
+
+.navbar-default .nav-pills .fa-twitter {
+    color: #033ABA;
+}
+
+.navbar-default .nav-pills .fa-instagram {
+    color: #eb25bf;
+}
+
+.navbar-default .nav-pills .fa-pinterest-p {
+    color: #e80e13;
+}
+
+.navbar-default .nav-pills .fa-youtube-play {
+    color: #ff0006;
+}
+
+
+
+
+/*logo*/
+#logo {
+    padding: 4rem 0;
+}
+
+
+/*slider*/
+
+
+/*post1*/
+#post1 {
+    padding: 60px 0 60px 0;
+    background: #dadada;
+}
+#post1 .post_title {
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 4rem 0;
+    color: #252127;
+}
+
+#post1  a:hover,
+#post1  a:focus,
+#post1  a:active
+{
+  text-decoration: none;
+}
+
+#post1 hr {
+    border: none;
+    border-top: 2px solid #430176;
+    width: 10rem;
+}
+
+#post1 .date {
+    font-size: .9rem;
+    color: #000;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+#post1 .content p {
+    margin: 2rem 0;
+}
+
+#post1 .btn-primary {
+    border: 1px solid #430176;
+    border-radius: 6rem;
+    background-color: transparent;
+    color: #000;
+}
+
+#post1 .btn-primary:hover,
+#post1 .btn-primary:focus,
+#post1 .btn-primary:active
+ {
+    background-color: #430176;
+}
+
+#post1 .post_content {
+    background: #eee;
+    padding: 4rem;
+}
+
+#post1 .aside_content {
+    background: #eee;
+    padding: 2rem;
+}
+
+#post1 .aside_title {
+    font-weight: 900;
+}
+
+#post1 .aside_content hr {
+    width: 6rem;
+}
+
+#post1 .list-inline .fa-facebook {
+    color: #0105f6;
+}
+
+#post1 .list-inline .fa-twitter {
+    color: #033ABA;
+}
+
+#post1 .list-inline .fa-instagram {
+    color: #eb25bf;
+}
+
+#post1 .list-inline .fa_title {
+    color: #000;
+}
+
+#post1 .share_box {
+    color: #a6a1a1;
+}
+
+#post1 .share_button {
+    color: #a6a1a1;
+    margin-left: 2rem;
+}
+
+
+/*Footer*/
+#footer {
+    padding: 60px 0 60px 0;
+    background: rgba(0,0,0,0.6);
+}
+
+#footer .footer_title {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+#footer .footer_content {
+    letter-spacing: 5px;
+    margin-bottom: -6rem;
+}
+
+#footer hr{
+    border: none;
+    border-top: 2px solid #000;
+    width: 10rem;
+}
+
+#footer .fa-chevron-circle-up {
+    color: #430176;
+}
