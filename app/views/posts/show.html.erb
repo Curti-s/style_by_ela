@@ -1,9 +1,30 @@
-<%= image_tag @post.image.url(:medium, :class => "img-responsive center-block") %>
-<h1><%= @post.title %></h1>
-<p>
-  <%= @post.content %>
-</p>
+<section id='show_post'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <h1 class='post_title text-center'><%= @post.title %></h1>
+        <hr>
+        <div class='img text-center'>
+          <%= image_tag @post.image.url(:medium) %>
+        </div>
+        <p class='content'>
+          <%= @post.content %>
+        </p>
 
-<%= link_to "Back", root_path %>
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure ?"} %>
+        <div class='btn-group'>
+          <%= link_to "Back", root_path, class: 'btn btn-sm' %>
+        </div>
+        <div class='btn-group'>
+          <%= link_to "Edit", edit_post_path(@post), class: 'btn btn-sm' %>
+        </div>
+        <div class='btn-group'>
+          <%= link_to "Delete", post_path(@post), class: 'btn btn-sm', method: :delete, data: {confirm: "Koi Are you sure ?"} %>
+        </div>
+
+        <br>
+
+        <%= render 'disqus' %>
+      </div>
+    </div>
+  </div>
+</section>

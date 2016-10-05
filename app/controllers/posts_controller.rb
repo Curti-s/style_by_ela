@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action  :find_post, only: [:show, :edit, :update, :destroy]
   #Index action
   def index
-    @posts = Post.all.order('created_at DESC')
+    @posts = Post.all.limit(3).order('created_at DESC')
   end
 
   #New action

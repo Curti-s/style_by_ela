@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,6 +23,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 4.2'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'bootstrap-slider-rails'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -47,4 +47,14 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :development do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg', '~> 0.19.0'
+  gem 'rails_12factor', '~> 0.0.3'
 end

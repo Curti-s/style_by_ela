@@ -9,12 +9,13 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
+ *= require bootstrap-slider
  *= require_tree .
  *= require_self
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
 
  body {
     font-family: 'Raleway', sans-serif;
@@ -76,7 +77,10 @@
 
 
 /*slider*/
-
+#slider {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 
 /*post1*/
 #post1 {
@@ -88,6 +92,7 @@
     font-size: 4rem;
     margin: 4rem 0;
     color: #252127;
+    text-align: center;
 }
 
 #post1  a:hover,
@@ -95,12 +100,13 @@
 #post1  a:active
 {
   text-decoration: none;
+  color: #430176;
 }
 
 #post1 hr {
     border: none;
     border-top: 2px solid #430176;
-    width: 10rem;
+    width: 6rem;
 }
 
 #post1 .date {
@@ -119,6 +125,7 @@
     border-radius: 6rem;
     background-color: transparent;
     color: #000;
+    margin-bottom: 2rem;
 }
 
 #post1 .btn-primary:hover,
@@ -131,6 +138,15 @@
 #post1 .post_content {
     background: #eee;
     padding: 4rem;
+}
+
+#post1  .sharebox {
+    color: #a6a1a1;
+}
+
+#post1  .share_button {
+    color: #a6a1a1;
+    margin-left: 2rem;
 }
 
 #post1 .aside_content {
@@ -162,15 +178,45 @@
     color: #000;
 }
 
-#post1 .share_box {
-    color: #a6a1a1;
+/*show_post*/
+#show_post {
+  background: #fff;
+  padding: 80px 0;
 }
 
-#post1 .share_button {
-    color: #a6a1a1;
-    margin-left: 2rem;
+#show_post .post_title {
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 4rem 0;
+  color: #252127;
 }
 
+#show_post .content {
+  margin-bottom: 2rem;
+}
+
+
+#show_post .btn-group a {
+  color: #14c9f4;
+}
+
+#show_post .btn-group a:hover,
+#show_post .btn-group a:focus,
+#show_post .btn-group a:active
+ {
+  color: #4b36a5;
+}
+
+#show_post hr {
+  border: none;
+  border-top: 2px solid #430176;
+  width: 6rem;
+  margin: 2rem auto 4rem auto;
+}
+
+#show_post .img {
+  margin: 2rem auto;
+}
 
 /*Footer*/
 #footer {
