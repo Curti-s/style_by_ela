@@ -15,12 +15,42 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
 
 
  body {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
 }
+
+.btn-primary {
+    border: 1px solid #430176;
+    border-radius: 6rem;
+    background-color: transparent;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active
+ {
+    background-color: #430176;
+    color: #ffffff;
+}
+
+.form-group textarea {
+	height: 200px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+.list-inline > li{
+  padding: 0;
+}
+
+
 .navbar-default {
     background-color:#eee;
     border-color:transparent;
@@ -133,6 +163,7 @@
 #post1 .btn-primary:active
  {
     background-color: #430176;
+    color: #ffffff;
 }
 
 #post1 .post_content {
